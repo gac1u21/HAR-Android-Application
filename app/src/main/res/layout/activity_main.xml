@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This layout defines the main UI for the MainActivity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spacer View to Fill Remaining Space -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Button to Start Recording -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Recording"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Button to Start Continuous Recording -->
+    <Button
+        android:id="@+id/button_start_continuous_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Continuous Recording"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Button to Start Labelled Recording -->
+    <Button
+        android:id="@+id/startLabelledRecordingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Labelled Recording"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- TextView to Display Recording Status -->
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press the button to start recording"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- ScrollView to Display Recorded Activity Logs -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:id="@+id/scroll">
+
+        <!-- TextView to Show Activity Logs -->
+        <TextView
+            android:id="@+id/tvRecords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <!-- Button to Show/Hide Activity Logs -->
+    <Button
+        android:id="@+id/viewLog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Records"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
